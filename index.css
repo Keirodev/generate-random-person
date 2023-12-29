@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Optional: To center the cards horizontally */
+}
+
+.person-card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; /* Display images side by side */
+}
+
+.person-card img {
+    flex: 1; /* Distribute available space equally to each image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
